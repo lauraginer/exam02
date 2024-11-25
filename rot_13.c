@@ -1,7 +1,6 @@
-#include <unistd.h>
-#include <stdio.h>
+//#include <unistd.h>
 
-void	rot_13(char letter)
+/*void	rot_13(char letter)
 {
 	char new_letter;
 
@@ -12,7 +11,7 @@ void	rot_13(char letter)
 	else
 		new_letter = letter;
 	write(1, &new_letter, 1);
-}
+}*/
 int main (int argc, char **argv)
 {
 	int	i;
@@ -28,6 +27,3 @@ int main (int argc, char **argv)
 	write (1, "\n", 1);
 	return(0);
 }
-
-
-

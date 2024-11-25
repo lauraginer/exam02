@@ -1,4 +1,4 @@
-//#include <unistd.h>
+#include <unistd.h>
 
 char *rev_print(char *str)
 {
@@ -17,7 +17,7 @@ char *rev_print(char *str)
 	return(str);
 }
 
-/*int main()
+int main()
 {
   rev_print("Hello world");
   write (1, "\n", 1);
@@ -25,4 +25,4 @@ char *rev_print(char *str)
   write (1, "\n", 1);
   rev_print("");
   write (1, "\n", 1);
-}*/
+}
