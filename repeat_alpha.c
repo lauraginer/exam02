@@ -1,18 +1,20 @@
-#include <unistd.h>
+//#include <unistd.h>
 
-void repeat_alpha (char letter)
+/*void repeat_alpha (char letter)
 {
 	int	repeat_count;
-	if(letter >= 'a' && letter <= 'z' || letter >= 'A' && letter <= 'Z')
+	if(letter >= 'a' && letter <= 'z')
 		repeat_count = letter - 'a' + 1;
+	else if(letter >= 'A' && letter <= 'Z')
+		repeat_count = letter - 'A' + 1;
 	else
 		repeat_count = 1;
-	while(repeat_alpha > 0)
+	while(repeat_count > 0)
 	{
 		write(1, &letter, 1);
 		repeat_count--;
 	}
-}
+}*/
 
 int main(int argc, char **argv)
 {
