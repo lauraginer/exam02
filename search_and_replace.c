@@ -1,11 +1,11 @@
 #include <unistd.h>
 
-void search_replace(char letter, char vocal, char replace)
+/*void search_replace(char letter, char vocal, char replace)
 {
 	if(letter == vocal)
 		letter = replace;
 	write(1, &letter, 1);
-}
+}*/
 int main (int argc, char **argv)
 {
 	int i;
