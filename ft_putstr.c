@@ -10,7 +10,6 @@ void	ft_putstr(char *str)
 		write(1, &str[i], 1); //accedes a la direccion de memoria de cada caracter
 		i++;
 	}
-	write(1, "\n", 1);
 	return ;
 
 }

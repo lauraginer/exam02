@@ -1,4 +1,4 @@
-//#include <unistd.h>
+#include <unistd.h>
 
 /*void rotone(char letter)
 {
@@ -24,6 +24,7 @@ int main(int argc, char **argv)
 			rotone(argv[1][i]);
 			i++;
 		}
+		write (1, "\n", 1);
 	}
 	else
 		write(1, "\n", 1);
