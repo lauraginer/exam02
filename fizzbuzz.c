@@ -1,13 +1,13 @@
 #include <unistd.h>
 
-void print_number(int i)
+/*void print_number(int i)
 {
 	char	str[10] = "0123456789"; //convertimos los digitos del numero en caracter
 
 	if (i > 9)
 		print_number(i / 10);
 	write (1, &str[i % 10], 1);
-}
+}*/
 
 int main()
 {
