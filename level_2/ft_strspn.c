@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 
 size_t	ft_strspn(const char *s, const char *accept)
 {
@@ -14,7 +14,7 @@ size_t	ft_strspn(const char *s, const char *accept)
 	return(count);
 }
 
-/*int main()
+int main()
 {
 	char *s;
 	char *s1;
@@ -25,7 +25,7 @@ size_t	ft_strspn(const char *s, const char *accept)
 	result = ft_strspn(s, s1);
 	printf("longitud final:%d\n", result);
 	return(0);
-}*/
+}
 
 /*La función `strspn` en C es una función de la biblioteca estándar que se utiliza
 para calcular la longitud del segmento inicial de una cadena que consiste únicamente en caracteres
