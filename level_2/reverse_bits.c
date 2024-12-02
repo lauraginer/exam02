@@ -6,11 +6,11 @@ unsigned char	reverse_bits(unsigned char octet)
 	unsigned char	res;
 
 	i = 8; //por cada bit
-	res = 0;
+	res = 0; //se almacena el resultado con los bits invertidos
 	while (i > 0)
 	{
-		res = (res << 1) | (octet & 1);
-		octet >>= 1;
+		res = (res << 1) | (octet & 1); //obtiene el bit menos significativo (derecho)
+		octet >>= 1; //desplaza los bits de octet a la derecha para continuar copiando
 		i--;
 	}
 	return (res);
