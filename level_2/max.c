@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 
 int		max(int* tab, unsigned int len)
 {
@@ -16,7 +16,7 @@ int		max(int* tab, unsigned int len)
 	}
 	return result;
 }
-/*int main()
+int main()
 {
 
 	int tab[] = {1, 5, 3, 4, 7, 30};
@@ -26,4 +26,4 @@ int		max(int* tab, unsigned int len)
 	result = max(tab, len);
 	printf("valor de la funcion: %d\n", result);
 	return(0);
-}*/
+}

@@ -32,3 +32,13 @@ size_t	ft_strcspn(const char *s, const char *reject)
 	printf("la longitud resultante es: %d\n", result);
 	return (0);
 }*/
+
+while(s[i] && reject[j])
+	{
+		i = 0;
+		j = 0;
+		if(s[i] == reject[j])
+			return(i);
+		j++;
+		i++;
+	}
