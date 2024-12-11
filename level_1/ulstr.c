@@ -25,9 +25,9 @@ int main (int argc, char **argv)
 			ultstr(argv[1][i]);
 			i++;
 		}
+		write(1,"\n", 1);
 	}
 	else
 		write(1, "\n", 1);
 	return(0);
 }
-

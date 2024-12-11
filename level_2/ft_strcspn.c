@@ -33,12 +33,9 @@ size_t	ft_strcspn(const char *s, const char *reject)
 	return (0);
 }*/
 
-while(s[i] && reject[j])
-	{
-		i = 0;
-		j = 0;
-		if(s[i] == reject[j])
-			return(i);
-		j++;
-		i++;
-	}
+/*La función `ft_strcspn` calcula la longitud del segmento inicial de la cadena `s1`
+que no contiene ningún carácter de la cadena `s2`. Itera sobre cada carácter de `s1` y,
+para cada carácter, verifica si está presente en `s2`. Si encuentra un carácter de `s1`
+que está en `s2`, devuelve la posición de ese carácter en `s1`. Si no encuentra ningún carácter
+de `s1` en `s2`, devuelve la longitud total del segmento inicial de `s1` que no contiene caracteres de `s2`.
+En resumen, `ft_strcspn` devuelve la longitud del segmento inicial de `s1` que no contiene ningún carácter de `s2`.*/
