@@ -14,7 +14,7 @@ int		max(int* tab, unsigned int len)
 			result = tab[i];
 		i++;
 	}
-	return result;
+	return (result);
 }
 int main()
 {

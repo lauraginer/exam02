@@ -12,8 +12,10 @@
        		{
             	i++;
                 if(str[i] >= 'a' && str[i] <= 'z')
-                    new_letter = str[i] - 32;
-                write(1, &new_letter, 1);
+				{
+					new_letter = str[i] - 32;
+                	write(1, &new_letter, 1);
+				}     
        		}
         	else
                 write(1, &str[i], 1);

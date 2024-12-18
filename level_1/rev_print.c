@@ -9,7 +9,7 @@ char *rev_print(char *str)
 	while(str[len])
 		len++;
 	i = len - 1; //situarlo antes del caracter nulo
-	while(str[i] != 0)
+	while(i != 0)
 	{
 		write(1, &str[i], 1);
 		i--;
