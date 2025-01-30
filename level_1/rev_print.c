@@ -1,28 +1,27 @@
 #include <unistd.h>
 
-char *rev_print(char *str)
+void rev_print(char *str)
 {
 	int i;
-	int len;
-
-	len = 0;
-	while(str[len])
-		len++;
-	i = len - 1; //situarlo antes del caracter nulo
-	while(i != 0)
+	
+	i = 0;
+	while(str[i])
+		i++;
+	i--;
+	while(i > -1)
 	{
 		write(1, &str[i], 1);
 		i--;
 	}
-	return(str);
 }
 
-int main()
+int main(int argc, char **argv)
 {
-  rev_print("Hello world");
-  write (1, "\n", 1);
-  rev_print("tnirp esreveR");
-  write (1, "\n", 1);
-  rev_print("");
-  write (1, "\n", 1);
+	if(argc == 2)
+	{
+		rev_print(argv[1]);
+		write(1, "\n", 1);
+	}
+	else
+		write(1, "\n", 1);
 }

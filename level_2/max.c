@@ -7,11 +7,12 @@ int		max(int* tab, unsigned int len)
 	
 	if (len == 0)
 		return (0);
+
 	result = tab[i];
-	while(i < len)
+	while(i < len) //recorremos el array hasta su maxima longitud
 	{
 		if(result < tab[i])
-			result = tab[i];
+			result = tab[i]; //si encontramos un número más grande, lo actualizamos
 		i++;
 	}
 	return (result);
