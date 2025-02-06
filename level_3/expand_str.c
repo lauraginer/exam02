@@ -5,7 +5,7 @@ void change(char *str)
     int i;
 
     i = 0;
-    while(str[i] && (str[i] == 32 || str[i] == '\t'))
+    while(str[i] && (str[i] == ' ' || str[i] == '\t'))
         i++;
     while(str[i])
     {
