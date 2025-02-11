@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 		while(i <= 9)
 		{
 			print_n(i);
-			write(1," X ",3);
+			write(1," x ", 3);
 			print_n(ft_atoi(argv[1]));
 			write(1," = ",3);
 			print_n(ft_atoi(argv[1]) * i);
