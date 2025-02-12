@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int     *ft_range(int start, int end)
+int     *ft_rrange(int start, int end)
 {
     int *n;
     int i;
@@ -10,14 +10,14 @@ int     *ft_range(int start, int end)
     n = malloc(1000000); //funciona como alternativa al malloc
 	while(start <= end)
 	{
-		n[i] = start;
-		start++;
-		i++; //posición exacta dentro del array por lo que siempre tiene que sumar para avanzar
+		n[i] = end;
+		end--;
+		i++; //posición exacta dentro del array
 	}
 	while(start >= end)
 	{
-		n[i] = start;
-		start--;
+		n[i] = end;
+		end++;
 		i++;
 	}
     return(n);
@@ -32,7 +32,7 @@ int     *ft_range(int start, int end)
     int size;
     int i;
 
-    range = ft_range(start, end);
+    range = ft_rrange(start, end);
     if (!range)
     {
         printf("Memory allocation failed\n");
