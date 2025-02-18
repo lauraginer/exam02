@@ -3,7 +3,7 @@
 
 char	*ft_itoa(int nbr)
 {
-	(long)int n = nbr;
+	long n = (long)nbr;
       	int len = 0;
 	
 	if(n <= 0)

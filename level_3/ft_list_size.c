@@ -11,6 +11,8 @@ int     ft_list_size(t_list *begin_list)
         int size;
 
         size = 0;
+		if(!begin_list)
+			return(0);
         while(begin_list)
         {
                 begin_list = begin_list->next; //la lista avanza al siguiente nodo(next)

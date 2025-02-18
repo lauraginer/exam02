@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void rev_print(char *str)
+char rev_print(char *str)
 {
 	int i;
 	
@@ -13,6 +13,7 @@ void rev_print(char *str)
 		write(1, &str[i], 1);
 		i--;
 	}
+	return(str);
 }
 
 int main(int argc, char **argv)
