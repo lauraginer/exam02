@@ -17,7 +17,7 @@ void es(char *str)
 		write(1, &str[i], 1);
 		i++;
 	}
-	if(str[i] == ' ' && str[i +1] == '\0')
+	if(str[i] == ' ' && str[i + 1] == '\0')
 		i++;
 }
 
