@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 void rc(char *str)
 {
@@ -6,15 +7,13 @@ void rc(char *str)
 
 	while(str[i])
 	{
-		if((str[i + 1] == ' ' || str[i + 1] >= 9 && str[i + 1] <= 13) || (i == 0))
+		if((str[i + 1] == ' ' || (str[i + 1] >= 9 && str[i + 1] <= 13)) || (i == 0) || (str[i + 1] == '\0'))
 		{
 			if(str[i] >= 'a' && str[i] <= 'z')
 				str[i] = str[i] - 32;
 		}
 		else if(str[i] >= 'A' && str[i] <= 'Z')
 			str[i] = str[i] + 32;
-		else if((str[i] >= 'a' && str[i] <= 'z') && (i == '\0'))
-			str[i] = str[i] - 32;
 		write(1, &str[i], 1);
 		i++;
 	}
