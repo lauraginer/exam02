@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	(void)argv;
 
-	if (argc > 1)
+	if(argc > 1)
 		print_number(argc - 1);// se pone -1 para restar el compilador
 	else
 		write(1, "0", 1);
