@@ -3,7 +3,7 @@
 
 char	*ft_itoa(int nbr)
 {
-	long n = (long)nbr;
+	long int n = (long)nbr;
 	long int cpyn = n;
     int len = 0;
 	
