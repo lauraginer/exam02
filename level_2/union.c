@@ -2,7 +2,7 @@
 
 void ft_union(char *s1, char*s2)
 {
-	char tab[256] = {0};
+	char tab[256] = {0}; //todos los valores del array son 0
 	int i = 0;
 
 	while (s1[i])

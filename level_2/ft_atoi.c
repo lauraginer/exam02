@@ -4,12 +4,12 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
+	int i = 0;
 	int result;
 	int sign;
 
-	sign = 1;
 	result = 0;
+	sign = 1;
 	while(str[i] == ' ' || str[i] <= 13 && str[i] >= 9) //quita espacios
 		i++;
 	if(str[i] == '-')
