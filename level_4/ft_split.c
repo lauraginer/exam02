@@ -15,14 +15,14 @@ char    **ft_split(char *str)
 	{
 		if(str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
 		{
-			start = i;
+			start = i; //almacenas el inicio en start
 			k = 0;
-			while(str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n') //recorres primera palabra
+			while(str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n') //almacenas la primera palabra en i
 				i++;
-			word = malloc(sizeof(char) * (i - start + 1));
+			word = malloc(sizeof(char) * (i - start + 1)); //guardas espacio para la palabra en sí
 			if(!word)
 				return(NULL);
-			while(start < i)
+			while(start < i) //importnte start como índice, no i (entonces el bucle no tiene sentido, modificas su valor)
 				word[k++] = str[start++];
 			word[k] = '\0';
 			split[j++] = word;
