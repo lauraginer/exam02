@@ -13,11 +13,11 @@ char    **ft_split(char *str)
 
 	while(str[i])
 	{
-		if(str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+		if(str[i] != ' ' || (str[i] < 9 && str[i] > 13))
 		{
 			start = i; //almacenas el inicio en start
 			k = 0;
-			while(str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n') //almacenas la primera palabra en i
+			while(str[i] && (str[i] != ' ' || (str[i] < 9 && str[i] > 13))) //almacenas la primera palabra en i
 				i++;
 			word = malloc(sizeof(char) * (i - start + 1)); //guardas espacio para la palabra en sí
 			if(!word)
